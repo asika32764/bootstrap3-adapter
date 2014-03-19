@@ -204,6 +204,9 @@
     margin-left: 0%;
   }
 }
+[class*="span"] {
+  min-height: 1px;
+}
 /*!
  * Bootstrap Responsive v2.3.2
  *

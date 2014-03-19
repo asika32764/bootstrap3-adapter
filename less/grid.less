@@ -122,3 +122,7 @@
 @media (min-width: @screen-md-min) {
   .make-grid2(span);
 }
+
+[class*="span"] {
+  min-height: 1px; // prevent collapsing columns
+}
