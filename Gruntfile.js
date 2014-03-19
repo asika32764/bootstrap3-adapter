@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       src: [
-        'dist/css/bootstrap.css',
+        'dist/css/bootstrap-adapter.css',
         'dist/css/bootstrap-theme.css',
         'docs/assets/css/docs.css',
         'docs/examples/**/*.css'
@@ -162,19 +162,7 @@ module.exports = function (grunt) {
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': 'less/bootstrap.less'
-        }
-      },
-      compileTheme: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
-        },
-        files: {
-          'dist/css/<%= pkg.name %>-theme.css': 'less/theme.less'
+          'dist/css/<%= pkg.name %>.css': 'less/bootstrap-adapter.less'
         }
       },
       minify: {
@@ -183,8 +171,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
-          'dist/css/<%= pkg.name %>-theme.min.css': 'dist/css/<%= pkg.name %>-theme.css'
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
         }
       }
     },
