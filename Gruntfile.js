@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       src: [
-        'dist/css/bootstrap-adapter.css',
+        'dist/css/bootstrap3-adapter.css',
         'dist/css/bootstrap-theme.css',
         'docs/assets/css/docs.css',
         'docs/examples/**/*.css'
@@ -158,11 +158,11 @@ module.exports = function (grunt) {
           strictMath: true,
           sourceMap: true,
           outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+          sourceMapURL: '<%= pkg.name %>3-adapter.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>3-adapter.css.map'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': 'less/bootstrap-adapter.less'
+          'dist/css/<%= pkg.name %>3-adapter.css': 'less/bootstrap3-adapter.less'
         }
       },
       minify: {
@@ -171,7 +171,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+          'dist/css/<%= pkg.name %>3-adapter.min.css': 'dist/css/<%= pkg.name %>3-adapter.css'
         }
       }
     },
