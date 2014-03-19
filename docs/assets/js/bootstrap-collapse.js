@@ -68,6 +68,7 @@
       this.$element[dimension](0)
       this.transition('addClass', $.Event('show'), 'shown')
       $.support.transition && this.$element[dimension](this.$element[0][scroll])
+	  window.tran = this.transitioning;
     }
 
   , hide: function () {
@@ -77,6 +78,7 @@
       this.reset(this.$element[dimension]())
       this.transition('removeClass', $.Event('hide'), 'hidden')
       this.$element[dimension](0)
+		  window.tran = this.transitioning;
     }
 
   , reset: function (size) {
@@ -131,6 +133,7 @@
         , data = $this.data('collapse')
         , options = $.extend({}, $.fn.collapse.defaults, $this.data(), typeof option == 'object' && option)
       if (!data) $this.data('collapse', (data = new Collapse(this, options)))
+	    window.coll = data;
       if (typeof option == 'string') data[option]()
     })
   }
