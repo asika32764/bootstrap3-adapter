@@ -1146,3 +1146,8 @@ form.bs-docs-example {
     padding-bottom: 20px;
   }
 }
+
+/* Line number */
+pre ol.linenums {
+  margin-left: 0;
+}
