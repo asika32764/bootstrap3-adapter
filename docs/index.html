@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>Bootstrap3 Adapter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!--<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">-->
     <link href="dist/css/bootstrap3-adapter.min.css" rel="stylesheet">
 
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -28,6 +28,7 @@
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
+      /*
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-146052-10']);
       _gaq.push(['_trackPageview']);
@@ -36,6 +37,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+      */
     </script>
   </head>
 
@@ -72,9 +74,7 @@
               <li class="">
                 <a href="./javascript.html">JavaScript</a>
               </li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
-              </li>
+              <!--Custom link-->
             </ul>
           </div>
         </div>
@@ -83,27 +83,24 @@
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h1>Bootstrap</h1>
-    <p>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+    <h1>Bootstrap3 Adapter</h1>
+    <p>Writing Bootstrap 2 syntax, using Bootstrap 3 styles.</p>
     <p>
-      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.3.2']);">Download Bootstrap</a>
+      <a href="assets/bootstrap3-adapter.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.3.2']);">Download Bootstrap</a>
     </p>
     <ul class="masthead-links">
       <li>
-        <a href="https://github.com/twbs/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
+        <a href="https://github.com/asika32764/boostrap3-adapter" onclick="">GitHub project</a>
       </li>
       <li>
-        <a href="./getting-started.html#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
+        <a href="./getting-started.html#examples">Examples</a>
       </li>
       <li>
-        <a href="./extend.html" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Extend']);">Extend</a>
-      </li>
-      <li>
-        Version 2.3.2
+        Version 1.0.0-beta1
       </li>
     </ul>
 
-    <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZDARK"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+    <!--AD-->
   </div>
 </div>
 
@@ -111,16 +108,10 @@
   <div class="container">
     <ul class="bs-docs-social-buttons">
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=asika32764&repo=bootstrap3-adapter&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
       </li>
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-      </li>
-      <li class="follow-btn">
-        <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-      </li>
-      <li class="tweet-btn">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twbs.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=asika32764&repo=bootstrap3-adapter&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
       </li>
     </ul>
   </div>
@@ -129,60 +120,352 @@
 <div class="container">
 
   <div class="alert alert-danger bs-alert-old-docs">
-    <strong>Heads up!</strong> These docs are for v2.3.2, which is no longer officially supported. <a href="http://getbootstrap.com">Check out the latest version of Bootstrap!</a>
+    <strong>Heads up!</strong> These docs are for Bootstrap 2 to 3 adapter, the Bootstrap 3 please see. <a href="http://getbootstrap.com">Check out the latest version of Bootstrap!</a>
   </div>
 
   <div class="marketing">
 
-    <h1>Introducing Bootstrap.</h1>
-    <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+    <h1>Introducing Bootstrap Adapter.</h1>
+    <p class="marketing-byline">Need reasons to love Bootstrap Adapter?</p>
 
-    <div class="row-fluid">
-      <div class="span4">
-        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
-        <h2>By nerds, for nerds.</h2>
-        <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
-      </div>
-      <div class="span4">
-        <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
-        <h2>Made for everyone.</h2>
-        <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
-      </div>
-      <div class="span4">
-        <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
-        <h2>Packed with features.</h2>
-        <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootstrap your own.</p>
-      </div>
-    </div>
+      <!-- Buttons
+         ================================================== -->
+      <section id="buttons" style="text-align: left;">
+          <div class="page-header">
+              <h1>Buttons</h1>
+          </div>
 
-    <hr class="soften">
+          <h2>Default buttons</h2>
+          <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                  <th>Button</th>
+                  <th>class=""</th>
+                  <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td><button type="button" class="btn">Default</button></td>
+                  <td><code>btn</code></td>
+                  <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-primary">Primary</button></td>
+                  <td><code>btn btn-primary</code></td>
+                  <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-info">Info</button></td>
+                  <td><code>btn btn-info</code></td>
+                  <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-success">Success</button></td>
+                  <td><code>btn btn-success</code></td>
+                  <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-warning">Warning</button></td>
+                  <td><code>btn btn-warning</code></td>
+                  <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-danger">Danger</button></td>
+                  <td><code>btn btn-danger</code></td>
+                  <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                  <td><code>btn btn-inverse</code></td>
+                  <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                  <td><button type="button" class="btn btn-link">Link</button></td>
+                  <td><code>btn btn-link</code></td>
+                  <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+              </tbody>
+          </table>
 
-    <h1>Built with Bootstrap.</h1>
-    <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./getting-started.html#examples">browse the examples</a>.</p>
-    <div class="row-fluid">
-      <ul class="thumbnails example-sites">
-        <li class="span3">
-          <a class="thumbnail" href="http://soundready.fm/" target="_blank">
-            <img src="assets/img/example-sites/soundready.png" alt="SoundReady.fm">
-          </a>
-        </li>
-        <li class="span3">
-          <a class="thumbnail" href="http://kippt.com/" target="_blank">
-            <img src="assets/img/example-sites/kippt.png" alt="Kippt">
-          </a>
-        </li>
-        <li class="span3">
-          <a class="thumbnail" href="http://www.gathercontent.com/" target="_blank">
-            <img src="assets/img/example-sites/gathercontent.png" alt="Gather Content">
-          </a>
-        </li>
-        <li class="span3">
-          <a class="thumbnail" href="http://www.jshint.com/" target="_blank">
-            <img src="assets/img/example-sites/jshint.png" alt="JS Hint">
-          </a>
-        </li>
-      </ul>
-     </div>
+          <h4>Cross browser compatibility</h4>
+          <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+
+
+          <h2>Button sizes</h2>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
+          <div class="bs-docs-example">
+              <p>
+                  <button type="button" class="btn btn-large btn-primary">Large button</button>
+                  <button type="button" class="btn btn-large">Large button</button>
+              </p>
+              <p>
+                  <button type="button" class="btn btn-primary">Default button</button>
+                  <button type="button" class="btn">Default button</button>
+              </p>
+              <p>
+                  <button type="button" class="btn btn-small btn-primary">Small button</button>
+                  <button type="button" class="btn btn-small">Small button</button>
+              </p>
+              <p>
+                  <button type="button" class="btn btn-mini btn-primary">Mini button</button>
+                  <button type="button" class="btn btn-mini">Mini button</button>
+              </p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p&gt;
+  &lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
+  &lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-primary" type="button"&gt;Default button&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-small btn-primary" type="button"&gt;Small button&lt;/button&gt;
+  &lt;button class="btn btn-small" type="button"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-mini btn-primary" type="button"&gt;Mini button&lt;/button&gt;
+  &lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
+&lt;/p&gt;
+</pre>
+          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+          <div class="bs-docs-example">
+              <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+                  <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
+                  <button type="button" class="btn btn-large btn-block">Block level button</button>
+              </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
+&lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
+</pre>
+
+
+          <h2>Disabled state</h2>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+
+          <h3>Anchor element</h3>
+          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+              <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
+              <a href="#" class="btn btn-large disabled">Link</a>
+          </p>
+<pre class="prettyprint linenums">
+&lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
+</pre>
+          <p>
+              <span class="label label-info">Heads up!</span>
+              We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+          </p>
+
+          <h3>Button element</h3>
+          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+              <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
+              <button type="button" class="btn btn-large" disabled>Button</button>
+          </p>
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
+</pre>
+
+
+          <h2>One class, multiple tags</h2>
+          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+          <form class="bs-docs-example">
+              <a class="btn" href="">Link</a>
+              <button class="btn" type="submit">Button</button>
+              <input class="btn" type="button" value="Input">
+              <input class="btn" type="submit" value="Submit">
+          </form>
+<pre class="prettyprint linenums">
+&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn" type="button" value="Input"&gt;
+&lt;input class="btn" type="submit" value="Submit"&gt;
+</pre>
+          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+
+      </section>
+
+
+
+      <!-- Images
+      ================================================== -->
+      <section id="images">
+          <div class="page-header">
+              <h1>Images</h1>
+          </div>
+
+          <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+          <div class="bs-docs-example bs-docs-example-images">
+              <img data-src="holder.js/140x140" class="img-rounded">
+              <img data-src="holder.js/140x140" class="img-circle">
+              <img data-src="holder.js/140x140" class="img-polaroid">
+          </div>
+<pre class="prettyprint linenums">
+&lt;img src="..." class="img-rounded"&gt;
+&lt;img src="..." class="img-circle"&gt;
+&lt;img src="..." class="img-polaroid"&gt;
+</pre>
+          <p><span class="label label-info">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.</p>
+
+
+      </section>
+
+    <!-- Labels and badges
+      ================================================== -->
+    <section id="labels-badges">
+        <div class="page-header">
+            <h1>Labels and badges</h1>
+        </div>
+        <h3>Labels</h3>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Labels</th>
+                <th>Markup</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span class="label">Default</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-success">Success</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-warning">Warning</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-important">Important</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-info">Info</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-inverse">Inverse</span>
+                </td>
+                <td>
+                    <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>Badges</h3>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Example</th>
+                <th>Markup</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Default
+                </td>
+                <td>
+                    <span class="badge">1</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge"&gt;1&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Success
+                </td>
+                <td>
+                    <span class="badge badge-success">2</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Warning
+                </td>
+                <td>
+                    <span class="badge badge-warning">4</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge badge-warning"&gt;4&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Important
+                </td>
+                <td>
+                    <span class="badge badge-important">6</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge badge-important"&gt;6&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Info
+                </td>
+                <td>
+                    <span class="badge badge-info">8</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge badge-info"&gt;8&lt;/span&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Inverse
+                </td>
+                <td>
+                    <span class="badge badge-inverse">10</span>
+                </td>
+                <td>
+                    <code>&lt;span class="badge badge-inverse"&gt;10&lt;/span&gt;</code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>Easily collapsible</h3>
+        <p>For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.</p>
+
+    </section>
 
   </div>
 
