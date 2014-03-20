@@ -3833,6 +3833,133 @@ fieldset[disabled] .btn-link:focus {
 .pagination-right {
   text-align: right;
 }
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.label[href]:hover,
+.label[href]:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.btn .label {
+  position: relative;
+  top: -1px;
+}
+.label {
+  background-color: #999999;
+}
+.label[href]:hover,
+.label[href]:focus {
+  background-color: #808080;
+}
+.label-primary {
+  background-color: #428bca;
+}
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #3071a9;
+}
+.label-success {
+  background-color: #5cb85c;
+}
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #449d44;
+}
+.label-info {
+  background-color: #5bc0de;
+}
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #31b0d5;
+}
+.label-warning {
+  background-color: #f0ad4e;
+}
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #ec971f;
+}
+.label-danger {
+  background-color: #d9534f;
+}
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #c9302c;
+}
+.label-important {
+  background-color: #d9534f;
+}
+.label-important[href]:hover,
+.label-important[href]:focus {
+  background-color: #c9302c;
+}
+.label-inverse {
+  background-color: #333333;
+}
+.label-inverse[href]:hover,
+.label-inverse[href]:focus {
+  background-color: #1a1a1a;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.badge:empty {
+  display: none;
+}
+a.badge:hover,
+a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.badge-important {
+  background-color: #d9534f;
+}
+.badge-important[href] {
+  background-color: #c9302c;
+}
+.badge-warning {
+  background-color: #f0ad4e;
+}
+.badge-warning[href] {
+  background-color: #ec971f;
+}
+.badge-success {
+  background-color: #5cb85c;
+}
+.badge-success[href] {
+  background-color: #449d44;
+}
+.badge-info {
+  background-color: #5bc0de;
+}
+.badge-info[href] {
+  background-color: #31b0d5;
+}
+.badge-inverse {
+  background-color: #333333;
+}
+.badge-inverse[href] {
+  background-color: #1a1a1a;
+}
 .thumbnails {
   margin-left: -20px;
   list-style: none;
