@@ -11,7 +11,7 @@ _site
 *.rej
 *.swo
 *.swp
-*.zip
+# *.zip
 *.vi
 *~
 
