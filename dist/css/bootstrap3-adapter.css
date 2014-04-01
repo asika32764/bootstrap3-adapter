@@ -1133,7 +1133,7 @@ ol.inline > li {
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 0;
   }
-  .modal {
+  .modal.hide {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -1141,10 +1141,10 @@ ol.inline > li {
     width: auto;
     margin: 0;
   }
-  .modal.fade {
+  .modal.hide.fade {
     top: -100px;
   }
-  .modal.fade.in {
+  .modal.hide.fade.in {
     top: 20px;
   }
 }
@@ -1186,7 +1186,7 @@ ol.inline > li {
     margin-right: 0;
     margin-left: 0;
   }
-  .modal {
+  .modal.hide {
     top: 10px;
     left: 10px;
     right: 10px;
@@ -4222,7 +4222,7 @@ a.thumbnail:focus {
 .modal-open {
   overflow: hidden;
 }
-.modal {
+.modal.hide {
   display: block;
   overflow: auto;
   overflow-y: scroll;
@@ -4261,13 +4261,13 @@ a.thumbnail:focus {
 .modal.hide.in {
   visibility: visible;
 }
-.modal {
+.modal.hide {
   position: relative;
   width: auto;
   margin: 10px;
 }
-.modal {
-  position: relative;
+.modal.hide {
+  position: fixed;
   background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -4328,11 +4328,11 @@ a.thumbnail:focus {
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  .modal {
+  .modal.hide {
     width: 600px;
     margin: 30px auto;
   }
-  .modal {
+  .modal.hide {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);

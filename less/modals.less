@@ -14,20 +14,22 @@
 
 // Container that the modal scrolls within
 .modal {
-  display: block;
-  overflow: auto;
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: @zindex-modal;
-  -webkit-overflow-scrolling: touch;
+  &.hide {
+    display: block;
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @zindex-modal;
+    -webkit-overflow-scrolling: touch;
 
-  // Prevent Chrome on Windows from adding a focus outline. For details, see
-  // https://github.com/twbs/bootstrap/pull/10951.
-  outline: 0;
+    // Prevent Chrome on Windows from adding a focus outline. For details, see
+    // https://github.com/twbs/bootstrap/pull/10951.
+    outline: 0;
+  }
 
   // When fading in the modal, animate it to slide down
   &.fade {
@@ -48,15 +50,15 @@
 }
 
 // Shell div to position the modal with bottom padding
-.modal {
+.modal.hide {
   position: relative;
   width: auto;
   margin: 10px;
 }
 
 // Actual modal
-.modal {
-  position: relative;
+.modal.hide {
+  position: fixed;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
@@ -132,11 +134,11 @@
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports
-  .modal {
+  .modal.hide {
     width: @modal-md;
     margin: 30px auto;
   }
-  .modal {
+  .modal.hide {
     .box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
 
