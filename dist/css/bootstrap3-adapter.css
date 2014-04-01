@@ -4223,7 +4223,7 @@ a.thumbnail:focus {
   overflow: hidden;
 }
 .modal {
-  display: none;
+  display: block;
   overflow: auto;
   overflow-y: scroll;
   position: fixed;
@@ -4254,7 +4254,12 @@ a.thumbnail:focus {
   transform: translate(0, 0);
 }
 .modal.hide {
-  display: fixed !important;
+  display: block !important;
+  visibility: hidden;
+  position: fixed;
+}
+.modal.hide.in {
+  visibility: visible;
 }
 .modal {
   position: relative;

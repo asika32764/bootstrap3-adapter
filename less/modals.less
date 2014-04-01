@@ -14,7 +14,7 @@
 
 // Container that the modal scrolls within
 .modal {
-  display: none;
+  display: block;
   overflow: auto;
   overflow-y: scroll;
   position: fixed;
@@ -34,11 +34,17 @@
     .translate(0, -25%);
     .transition-transform(~"0.3s ease-out");
   }
-  &.in { .translate(0, 0)}
-}
-
-.modal.hide {
-  display: fixed !important;
+  &.in {
+    .translate(0, 0);
+  }
+  &.hide {
+    display: block !important;
+    visibility: hidden;
+    position: fixed;
+  }
+  &.hide.in {
+    visibility: visible;
+  }
 }
 
 // Shell div to position the modal with bottom padding
