@@ -230,7 +230,10 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: 'fonts/*',
+        src: [
+	        'fonts/*',
+	        'img/*'
+        ],
         dest: 'dist/'
       },
       docs: {
@@ -239,7 +242,8 @@ module.exports = function (grunt) {
         src: [
           '{css,js}/*.min.*',
           'css/*.map',
-          'fonts/*'
+          'fonts/*',
+	        'img/*'
         ],
         dest: 'docs/dist'
       }
